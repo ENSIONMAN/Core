@@ -19,7 +19,7 @@ public class RestartUtils {
 			String startupScript = "START.bat";
 			final File file = new File(startupScript);
 			if (file.isFile()) {
-				for (Player p : Core.getCore().getServer().getOnlinePlayers()) {
+				for (Player p : Core.get().getServer().getOnlinePlayers()) {
 					p.kickPlayer(message);
 				}
 				

@@ -6,7 +6,7 @@ import me.rainoboy97.core.Core;
 
 public class CoreLog {
 	
-	private static Core plugin = Core.getCore();
+	private static Core plugin = Core.get();
 	private static final String PREFIX = "[" + plugin.getDescription().getName() + "] ";
 	
 	/** Logging with level **/
