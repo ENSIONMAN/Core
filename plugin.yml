@@ -1,0 +1,6 @@
+name: Core
+main: me.rainoboy97.core.Core
+version: 0.1
+commands:
+  s:
+    description: s
