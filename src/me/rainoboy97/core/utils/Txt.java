@@ -318,7 +318,7 @@ public class Txt {
 		return getMaterialName(Material.getMaterial(materialId));
 	}
 
-	private final static String titleizeLine = repeat("_", 50);
+	private final static String titleizeLine = repeat("_", 52);
 	private final static int titleizeBalance = -1;
 
 	public static String titleize(String str) {

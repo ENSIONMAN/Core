@@ -11,17 +11,17 @@ public class CoreLog {
 	
 	/** Logging with level **/
 	public static void log(Level level, String msg) {
-		plugin.getLogger().log(level, msg);
+		plugin.getLogger().log(level, Txt.parse(msg));
 	}
 	
 	/** Logging with level INFO **/
 	public static void log(String msg) {
-		log(Level.INFO, msg);
+		log(Level.INFO, Txt.parse(msg));
 	}
 	
 	/** Logging with level INFO and color **/
 	public static void logWithColor(String msg) {
-		plugin.getServer().getConsoleSender().sendMessage(PREFIX + msg);
+		plugin.getServer().getConsoleSender().sendMessage(PREFIX + Txt.parse(msg));
 	}
 
 }
