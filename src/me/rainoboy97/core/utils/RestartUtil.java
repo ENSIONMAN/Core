@@ -12,7 +12,7 @@ import net.minecraft.server.v1_5_R3.MinecraftServer;
 
 import org.bukkit.entity.Player;
 
-public class RestartUtils {
+public class RestartUtil {
 
 	public static void restart(String message) {
 		try {

@@ -8,7 +8,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class PlayerUtils {
+public class PlayerUtil {
 
 	public static Player matchPlayer(CommandSender sender, String name) {
 		List<Player> player = Bukkit.matchPlayer(name);
