@@ -9,8 +9,7 @@ import org.bukkit.entity.Player;
 
 public abstract class CoreCmd implements CommandExecutor {
 
-	@SuppressWarnings("unused")
-	private Core plugin;
+	protected final Core plugin;
 
 	public CoreCmd(Core plugin) {
 		this.plugin = plugin;
@@ -30,11 +29,7 @@ public abstract class CoreCmd implements CommandExecutor {
 	public abstract boolean onConsoleCmd(CommandSender console, Command command, String alias, String[] args);
 
 	public boolean isPlayer(CommandSender sender) {
-		if (sender instanceof Player) {
-			return true;
-		} else {
-			return false;
-		}
+		return sender instanceof Player ? true : false;
 	}
 
 }
